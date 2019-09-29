@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">TestAppForSimaLand</string>
+
+    <string name="cart_empty">В корзине пусто!</string>
+
+</resources>

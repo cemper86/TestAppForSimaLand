@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main_activity"
+    app:startDestination="@id/catalogFragment">
+
+    <fragment
+        android:id="@+id/catalogFragment"
+        android:label="fragment_catalog"
+        android:name="ru.stairenx.testappforsimaland.view.fragment.CatalogFragment"
+        tools:layout="@layout/fragment_catalog">
+
+        <action
+            android:id="@+id/action_catalogFragment_to_subcategoryFragment"
+            app:destination="@id/subcategoryFragment"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/cartFragment"
+        android:label="fragment_cart"
+        android:name="ru.stairenx.testappforsimaland.view.fragment.CartFragment"
+        tools:layout="@layout/fragment_cart"/>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:label="fragment_profile"
+        android:name="ru.stairenx.testappforsimaland.view.fragment.ProfileFragment"
+        tools:layout="@layout/fragment_profile"/>
+
+    <fragment
+        android:id="@+id/subcategoryFragment"
+        android:label="fragment_subcategory"
+        android:name="ru.stairenx.testappforsimaland.view.fragment.SubCategoryFragment"
+        tools:layout="@layout/fragment_subcategory"/>
+
+
+</navigation>
